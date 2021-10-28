@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    background: white;
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    text-align: center;
+    color: rgb(184, 229, 255);
+    background-color: white;
+    border-bottom: solid rgb(24, 160, 24);
+
+  }
+  
+  .header h1 {
+    font-size: 50px;
+  }
+
+  del{
+    opacity: .8;
+    color: rgb(139, 139, 139);
+    font-size: 10px;
+  }
+
+  .desc{
+    color: rgb(42, 133, 252);
+    font-size: 15px;
+    margin-bottom: 7px;
+  }
+
+  h4{
+    margin-top: 7px;
+    margin-bottom: 7px; 
+  }
+
+  h6{
+    font-size: 10px;
+    color: rgb(139, 139, 139);
+    margin-top: 7px;
+    margin-bottom: 7px; 
+  }
+
+  .entrega{
+    background-color: rgb(42, 133, 252);
+    color: white;
+    font-size: 13px;
+    border-radius: 5px;
+    padding: 2px;
+    margin-top: 7px;
+  }
+
+  b{
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    text-align: left;
+  }
+  
+  /* Style the topnav links */
+  .topnav h1 {
+    float: left;
+    display: block;
+    color: rgb(24, 160, 24);
+    background-color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+ 
+  
+  /* Crea dos columnas desiguales que floten una al lado de la otra. */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 50%;
+   
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: right;
+    width: 50%;
+    background-color: white;
+  }
+  
+  .otraimgfalsa img {
+    background-color: white;
+    width: 100%;
+    padding: 1px;
+    opacity: 1;
+  }
+
+  .otraimgfalsa:hover{
+    opacity: .6;
+  }
+
+  .abejaimg img{
+    background-color: white;
+    width: 100%;
+    padding: 1px;
+  }
+
+  .card2 {
+    background-color: white;
+    width: 100%;
+    padding: 0px;
+    margin-top: 0px;
+    border-top: solid rgb(24, 160, 24) 1px;
+  }
+
+  .card2 button{
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    margin: 5px 0px;
+    background-color: white;
+    color: rgb(24, 160, 24);
+    border-color: rgb(24, 160, 24);
+    border-radius: 10px;
+  }
+
+  .card3 {
+    background-color: white;
+    width: 100%;
+    padding: 0px;
+    margin-top: 0px;
+    border-top: solid rgb(24, 160, 24) 1px;
+  }
+
+  .card3 button{
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    margin: 5px 0px;
+    background-color: white;
+    color: rgb(24, 160, 24);
+    border-color: rgb(24, 160, 24);
+    border-radius: 10px;
+  }
+  
+  .boton{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(24, 160, 24);
+    color: white;
+    padding: 1.5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 2px;
+  }
+
+  /* Limpia las columnas despues del float cuando se usa en estado de movil */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    border-top: solid 1px rgb(143, 143, 143);
+    border-bottom: solid 1px rgb(143, 143, 143);
+  }
+
+  h3{
+    color: gray;
+    font-size: 10px;
+    text-align: left;
+    margin: 5px;
+  }
+
+  .nom{
+    text-align: right;
+    margin: 5px;
+    color: gray;
+    font-size: 10px;
+  }
+  
+  /* Diseño receptivo: cuando la pantalla tiene menos de 800 px de ancho, haga que las dos columnas se apilen una encima de la otra en lugar de una al lado de la otra */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 50%;
+      padding: 5px;
+    }
+  }
+  
+  /* Diseño receptivo: cuando la pantalla tiene menos de 400 px de ancho, haga que los enlaces de navegación se apilen uno encima del otro en lugar de uno al lado del otro */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
