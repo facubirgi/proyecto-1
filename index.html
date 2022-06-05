@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Informativa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<style>
+    * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: rgb(0, 157, 255);
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    text-align: center;
+    color: rgb(184, 229, 255);
+    background-image: url(https://fondosmil.com/fondo/9914.jpg);
+  }
+  
+  .header h1 {
+    font-size: 50px;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-image: url(https://fondosmil.com/fondo/9914.jpg);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Crea dos columnas desiguales que floten una al lado de la otra. */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: rgb(0, 157, 255);
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+
+  .falsaimg img{
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    opacity: 1;
+  }
+
+  .falsaimg:hover{
+      opacity: .6;
+  }
+
+  .otraimgfalsa img {
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    opacity: 1;
+  }
+
+  .otraimgfalsa:hover{
+    opacity: .6;
+  }
+
+  .abejaimg img{
+    background-color: rgb(78, 78, 78);
+    width: 100%;
+    padding: 1px;
+  }
+  
+  .fakeimg {
+    background-color: rgb(78, 78, 78);
+    width: 100%;
+    padding: 10px;
+  }
+
+
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  .card1 {
+    background-color: white;
+    width: 100%;
+    padding: 0px;
+    margin-top: 20px;
+  }
+
+  .card2 {
+    background-color: white;
+    width: 100%;
+    padding: 0px;
+    margin-top: 0px;
+  }
+
+  .card3 {
+    background-color: white;
+    width: 100%;
+    padding: 0px;
+    margin-top: 0px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    background-image: url(https://fondosmil.com/fondo/9914.jpg);
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Diseño receptivo: cuando la pantalla tiene menos de 800 px de ancho, haga que las dos columnas se apilen una encima de la otra en lugar de una al lado de la otra */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Diseño receptivo: cuando la pantalla tiene menos de 400 px de ancho, haga que los enlaces de navegación se apilen uno encima del otro en lugar de uno al lado del otro */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+</style>
+<div class="header">
+  <h1>Mi Pagina</h1>
+  <p>Este es un citio de practica, por favor no moleste.</p>
+</div>
+
+<div class="topnav">
+  <a href="#">Inicio</a>
+  <a href="#">Opciones</a>
+  <a href="#">Contacto</a>
+  <a href="#" style="float:right">Ajustes</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Las placas Tectonicas</h2>
+      <h5>Noticia, 20 de Octubre de 2021</h5>
+      <div class="falsaimg"><img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Tectonic_plate_boundaries2.png"></div>
+      <p>Acerca de esto...</p>
+      <p>La tectónica de placas es la teoría que explica la estructura y dinámica de la superficie terrestre. Establece que la litosfera (la zona dinámica superior, la más externa y rígida de la Tierra) 
+        está fragmentada en una serie de placas que se desplazan sobre la astenosfera. Esta teoría también describe el movimiento de las placas, sus direcciones e interacciones y explica fenómenos como el cinturón de fuego del Pacífico, los arco-isla o las fosas oceánicas.
+        La Tierra es el único planeta del sistema solar con placas tectónicas activas, aunque hay evidencias de que en tiempos remotos Marte, Venus y algunos de los satélites galileanos, como Europa, fueron tectónicamente activos.</p>
+    </div>
+    <div class="card">
+      <h2>Biomas del planeta</h2>
+      <h5>Noticia, 20 de Octubre de 2021</h5>
+      <div class="otraimgfalsa"><img src="https://www.ecured.cu/images/5/5d/Bioma.jpg" width="800px"></div>
+      <p>Acerca de esto...</p>
+      <p>Un bioma, también llamado paisaje bioclimático o área biótica es una determinada parte del planeta que 
+        comparte el clima, flora y fauna. Un bioma es el conjunto de ecosistemas característicos de una zona biogeográfica que está definido a partir de su vegetación y de las especies animales que predominan. Es la expresión de las condiciones ecológicas del lugar en el plano regional o continental: el clima y el suelo determinan 
+        las condiciones ecológicas a las que responden las comunidades de plantas y animales del bioma en cuestión.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Curiosidades</h2>
+      <h3>Las Abejas...</h3>
+      <div class="abejaimg"><img src="https://www.infocampo.com.ar/wp-content/uploads/2019/09/abeja4.jpg" alt=""></div>
+      <p>Los antófilos, conocidos comúnmente como abejas, son un clado de insectos himenópteros, 
+        sin ubicación en categoría taxonómica, dentro de la superfamilia Apoidea. Se trata de un linaje monofilético con más de 
+        20 000 especies conocidas. Las abejas, al igual que las hormigas, evolucionaron a partir de himenópteros aculeados. 
+        Los antepasados de las abejas estaban relacionados con la familia Crabronidae y eran depredadores de insectos. 
+        Es posible que las primeras abejas se hayan alimentado del polen que cubría a algunas de sus presas y que, gradualmente, 
+        hayan empezado 
+        a alimentar a sus crías con polen en lugar de insectos.</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="card1"><img src="https://www.wallpapertip.com/wmimgs/65-653452_green-grunge-fabric-texture-background-green-grunge-texture.jpg" width="290px" height="100px"></div>
+      <div class="card2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo8hh4-FjZAN84jkGc7-bub5-72FscuyhObK02O69QpMkGkdwOj4cM4LzrUIwFxW43lFo&usqp=CAU" width="290px" height="100px"></div>
+      <div class="card3"><img src="https://disruptivoo.com/wp-content/uploads/2020/09/25-Fondos-de-Pantalla-Amarillos-tono-pastel-.jpg" width="290px" height="100px"></div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
