@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 0px;
+    margin: 0px;
+    background: rgb(255, 255, 255);
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 20px;
+    text-align: center;
+    color: rgb(3, 214, 98);
+    background-color: #f2f2f2;
+
+  }
+  
+  .logo{
+    width: 50px;
+    height: 50px;
+    display: flex;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    position: initial;
+    font-size: 15px;
+    color: rgb(3, 214, 98);
+    overflow: hidden;
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 2px 3px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    z-index: 1;
+  }
+
+   * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  text-align: left;
+}
+
+.port_anuncio{
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    color: #000000;
+    background-color: rgb(230, 255, 4);
+    opacity: .6;
+    border-radius: 10%;
+}
+
+.port_anuncio:hover{
+  opacity: .9;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+} 
+
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: rgb(3, 214, 98);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: rgb(3, 214, 98);
+    color: white;
+  }
+  
+  /* Crea dos columnas desiguales que floten una al lado de la otra. */
+  
+  .row{
+    display: flex;
+    padding: 100px;
+    float: center;
+  }
+
+  .leftcolumn {   
+    float: left;
+    width: 50%;
+  }
+
+  .centercolumn {   
+    float: center;
+    width: 50%;
+  }
+
+  .rightcolumn {   
+    float: right;
+    width: 50%;
+  }
+
+  h2{
+    text-align: center;
+  }
+  .falsaimg img{
+    width: 100%;
+    padding: 10px;
+    opacity: 1;
+    
+  }
+
+  .falsaimg:hover{
+      opacity: .6;
+  }
+  
+  .boton,.boton1,.boton2,.boton3,.boton4,.boton5{
+    display: flex;
+    margin: auto;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 4px;
+    padding: 10px 24px;
+    font-size: 20px;
+    background-color: rgb(3, 214, 98);
+    color: white;
+  }
+
+  .boton,.boton1,.boton2,.boton3,.boton4,.boton5:hover{
+    opacity: .9;
+  }
+
+  /* Add a card effect for articles */
+  .card {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    padding: 20px 20px;
+    margin: 20px 50px;
+    width: 70%;
+    height: 50%;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    background-color:rgb(17, 201, 100);
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  
+  /* Diseño receptivo: cuando la pantalla tiene menos de 800 px de ancho, haga que las dos columnas se apilen una encima de la otra en lugar de una al lado de la otra */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn, .leftcenter {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Diseño receptivo: cuando la pantalla tiene menos de 400 px de ancho, haga que los enlaces de navegación se apilen uno encima del otro en lugar de uno al lado del otro */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }

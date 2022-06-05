@@ -1,0 +1,70 @@
+body{
+    font-family: arial;
+    font-size: 23px;
+}
+
+.contenedor{
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 10px 10px;
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 4px;
+}
+
+.titulo{
+    font-size: 24px;
+    color: rgb(63, 62, 62);
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.imagen{
+    float: center;
+    display: inline;
+    width: 100%;
+    height: auto;
+}
+
+.descripcion{
+    display: block;
+    font-size: 15px;
+    color: rgb(121, 121, 121);
+    text-align: left;
+    padding-top: 10px;
+}
+
+.plata{
+    display: flex;
+}
+.precio{
+    display: flex;
+    text-align: left;
+    font-size: 20px;
+    margin: 0px;
+    padding: 10px 0px;
+}
+
+.descuento{
+    display: flex;
+    font-size: 10px;
+    margin: 5px 5px;
+    padding: 10px 0px;
+    color: rgb(2, 88, 248);
+}
+
+.boton {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 4px;
+    padding: 10px 24px;
+    font-size: 20px;
+    background-color: rgb(3, 214, 98);
+    color: white;
+  }
+  
+  .boton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
